@@ -1,0 +1,78 @@
+@import "../../../common/scss/colors";
+@import "../../../common/scss/__blocks/product-order-button";
+@import "../../../common/scss/__blocks/product-order-quantity";
+
+.product-details-order-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "orderQuantity ." "pickupInStore addToCart";
+    grid-gap: 1.5em 1em;
+    margin-top: 1.5em;
+
+}
+
+.product-details-order-form__in-store-pickup {
+    width: 100%;
+    grid-area: pickupInStore;
+}
+
+.product-details-order-form__add-to-cart {
+    width: 100%;
+    grid-area: addToCart;
+}
+
+.product-details-order-form__order-quantity {
+    grid-area: orderQuantity;
+}
+
+.product-details-order-form__find-in-store-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    margin: 0.2em;
+    grid-template-areas: "findInStore .";
+}
+
+.product-details-order-form__find-in-store-link {
+    grid-area: findInStore;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.product-details-order-form__returns-section {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.product-details-order-form__returns-label {
+    padding-right: 1.5em;
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.product-details-order-form__returns-content {
+    padding-left: 1em;
+    border-left: 1px solid $gray25Color;
+    height: 6em;
+    overflow: scroll;
+    margin: 0;
+}
+
+.product-details-order-form__action-buttons-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.25em;
+    padding: 1.5em 0;
+}
+
+.product-details-order-form__action-button {
+    min-height: 2.3em;
+    width: 100%;
+    font-size: .6em;
+    padding: 0.24em 0.5em;
+    border-radius: 0.1em;
+    background-color: $gray10Color;
+}

@@ -1,0 +1,41 @@
+
+.customer-reviews {
+    display: flex;
+    align-items: baseline;
+    padding: 1em 1.5em;
+}
+
+.customer-reviews__star-rating-container {
+    font-size: 1.5em;
+}
+
+.customer-reviews__rating-label {
+    padding: 0.5em;
+    flex: 1;
+}
+
+.pro-con-reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "proheader conheader" "proreview conreview";
+    padding: 1em 1.5em;
+    background-color: #f2f0f0;
+}
+
+.pro-con-reviews__review-header {
+    border-bottom: 1px solid black;
+    padding: 0 1em 1em 0;
+}
+
+.pro-con-reviews__pro-review-section-header {
+    grid-area: proheader;
+}
+
+.pro-con-reviews__con-review-section-header {
+    grid-area: conheader;
+}
+
+.pro-con-review__summary {
+    padding: 1em 1em 0 0;
+}

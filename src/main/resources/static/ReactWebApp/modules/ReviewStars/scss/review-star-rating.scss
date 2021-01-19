@@ -1,0 +1,13 @@
+@import "../../../common/scss/colors";
+
+.star-rating-container {
+    display: flex;
+}
+
+.review-star::before {
+    content: "\2605";
+}
+
+.target-red-font-color {
+    color: $targetRed;
+}

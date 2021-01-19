@@ -1,0 +1,84 @@
+// using bem methodology block-name__elem-name_mod-name_mod-val
+/*
+*
+Names are written in lowercase Latin letters.
+
+Words are separated by a hyphen (-).
+
+The block name defines the namespace for its elements and modifiers.
+
+The element name is separated from the block name by a double underscore (__).
+
+The modifier name is separated from the block or element name by a single underscore (_).
+
+The modifier value is separated from the modifier name by a single underscore (_).
+
+For boolean modifiers, the value is not included in the name
+*/
+
+@import "./common/scss/colors";
+@import "./common/scss/mediaQueryBreakPoints";
+
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.5em);
+    font-family: helvetica, sans-serif;
+    div {
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: $mediumScreen) {
+    :root {
+        font-size: 1em;
+    }
+}
+
+#react-content {
+    width: 90%;
+    margin: 0 auto;
+    color: $gray65Color;
+}
+
+@media screen and (min-width: $mediumScreen) {
+
+    #react-content {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: $largeScreen) {
+
+    #react-content {
+        position: relative;
+        width: 70%;
+    }
+}
+
+.medium-title-container {
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+.large-title-container {
+    font-size: 2em;
+    line-height: 1.3;
+}
+
+button {
+    visibility: visible;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.offscreen {
+    position: absolute;
+    left: -2000px;
+}
+
+.subscript-title {
+    font-size: 0.5em;
+    padding-left: 0.5em;
+    font-weight: initial;
+}

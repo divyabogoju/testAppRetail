@@ -1,0 +1,18 @@
+.product-order-button {
+    box-shadow: 0.1em 0.1em 0.1em #124;
+    border-radius: 0.1em;
+    color: white;
+    min-height: 2.5em;
+    letter-spacing: 0.0625em;
+    font-size: 0.75em;
+    padding: 0.24em 0.5em;
+    cursor: pointer;
+}
+
+.in-store-pickup {
+    background-image: linear-gradient(to bottom, #a5a5a5 0%, #606060 17%, #3a3a3a 49%, #000000 100%);
+}
+
+.add-to-cart {
+    background-image: linear-gradient(to bottom, #ffc0bc 0%, #db0000 17%, #c90000 49%, #af0000 100%);
+}

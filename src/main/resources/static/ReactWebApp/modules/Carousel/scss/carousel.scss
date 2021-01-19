@@ -1,0 +1,117 @@
+@import "../../../common/scss/colors";
+@import "../../../common/scss/mediaQueryBreakPoints";
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel__carousel-preview-container {
+    position: relative;
+    overflow: hidden;
+    height: 70vw;
+}
+
+@media screen and (min-width: $mediumScreen) {
+    .carousel__carousel-preview-container {
+        height: 35vw;
+    }
+}
+
+@media screen and (min-width: $largeScreen) {
+    .carousel__carousel-preview-container {
+        height: 30vw;
+    }
+}
+
+.carousel__preview-img {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: 1s;
+    width: 100%;
+}
+
+.carousel__preview-img_current {
+    opacity: 1;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.carousel__control-buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel__thumbnails-outer {
+    height: 15vw;
+    overflow: hidden;
+    position: relative;
+    width: 66%;
+
+}
+@media screen and (min-width: $mediumScreen) {
+    .carousel__thumbnails-outer {
+        height: 8vw;
+    }
+}
+
+.carousel__thumbnail-container {
+    width: 33%;
+    position: absolute;
+    top: 30vw;
+}
+
+.carousel__thumbnail-container_current {
+    border: 1px solid $gray25Color;
+    top: 0;
+    left: 33%;
+}
+
+.carousel__thumbnail-container_next {
+    cursor: pointer;
+    top: 0;
+    left: 66%;
+}
+
+.carousel__thumbnail-container_prev {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.carousel__thumbnail-img {
+    width: 100%;
+}
+
+.carousel__view-larger-button {
+    cursor: pointer;
+    margin-bottom: 1em;
+    display: none;
+    &:before {
+        content: '\1F50D';
+        margin-right: 0.5em;
+    }
+}
+
+@media screen and (min-width: $mediumScreen) {
+    .carousel__view-larger-button {
+        display: block;
+    }
+}
+
+.carousel__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel__modal-image {
+    display: none;
+}
+
+.carousel__modal-image_current {
+    display: block;
+}

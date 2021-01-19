@@ -1,0 +1,17 @@
+.product-title-and-carousel-outer {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-title-and-carousel-outer__product-title {
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+    font-weight: 300;
+}
+
+.product-title-and-carousel__content {
+    width: 80%;
+}

@@ -1,0 +1,19 @@
+@import "../colors";
+@import "circle-buttons";
+
+.product-order-quantity {
+    border: 1px solid $gray25Color;
+    display: flex;
+    align-items: center;
+}
+
+.product-order-quantity__input-label {
+    flex-grow: 1;
+    font-size: 0.7em;
+    padding: 0.5em;
+}
+
+.product-order-quantity__circle-btn {
+    margin: 0.25em;
+}
+

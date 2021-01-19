@@ -1,0 +1,23 @@
+@import "../colors";
+.circle-btn {
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: $gray25Color;
+    cursor: pointer;
+    &:before {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.add-items:before {
+    content: '\002B';
+}
+
+.remove-items:before {
+    content: '\2212';
+}

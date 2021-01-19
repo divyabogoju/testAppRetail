@@ -1,0 +1,58 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+*.svn
+.mvn
+*.git
+*.metadata
+*.class
+*.css
+*.css.map
+*.ear
+*.war
+*.jar
+*.iml
+*Servers/Tomcat v7.0 Server at localhost-config
+*.diff
+beagle-parent/test-swagger/
+*.orig
+*.rej
+generated/temp/
+/bin/
+/EbayCategoryMapping.xlsx
+/EbayErrorsAndWarnings.xlsx
+/TaxCodeMapping.xlsx
+overlays/**
+node_modules/**
+node/**
+**/*_jsx.js
+**/*_jsx.js.map
+/coverage/**
+logs.dir_IS_UNDEFINED/*
+
+### Cucumber automation tests ###
+**/errorShots/**
